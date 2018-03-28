@@ -1,5 +1,4 @@
 //NAVIGATION DRAWER
-
 var bodyElement = document.body,
   content = document.querySelector('.content-wrapper'),
   openButton = document.getElementById('open-button'),
