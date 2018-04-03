@@ -185,3 +185,20 @@ h1 {
   background-color: #ed5240;
   border-radius: 50%;
 }
+
+
+/**ABOUT US PAGE**/
+
+.about {
+
+}
+
+.about p {
+  text-align: justify;
+  font-family: Calibre-light;
+  font-size: 1.25em;
+}
+
+.about h4 {
+  font-size: 1em;
+}
