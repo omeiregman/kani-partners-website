@@ -13,10 +13,15 @@
     src: url(../fonts/calibre-light-normal.woff);
 }
 
-
-h1 {
-
+.row a {
+  color: #ED5240;
 }
+
+.row a:hover {
+  text-decoration: none;
+  color: #0d9d9d;
+}
+
 
 .header-one {
   font-family: Calibre-bold;
@@ -28,7 +33,9 @@ h1 {
 /* ------NAV------- */
 
 /* Mobile Navigation */
-
+#navigation-drawer {
+  padding: 3%;
+}
 
 #mobile-bar {
   position: fixed;
@@ -37,6 +44,7 @@ h1 {
   height: 55px;
   background: #fff;
   top: 0;
+  left: 0;
 }
 
 .hero-nav {
@@ -44,6 +52,20 @@ h1 {
   font-family: Calibre-bold;
   font-weight: 700;
   margin-left: 5%;
+}
+
+.hero-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero-nav a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width:45em) {
+
 }
 
 /* Drawer Menu */
@@ -56,7 +78,7 @@ h1 {
   width: 50%;
   height: 100%;
   padding: 75px 0;
-  background: #ED5240;
+  background: #000000;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: .5s;
@@ -118,7 +140,7 @@ h1 {
     -ms-flex-direction: column;
     flex-direction: column;
     top: 12px;
-    right: 11px;
+    right: 40px;
     width: 50px;
     height: 50px;
     font-size: 10px;
@@ -131,7 +153,7 @@ h1 {
   width: 32px;
   height: 1px;
   margin-top: 7.5px;
-  background: #000;
+  background: #ED5240;
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform-origin: left top;
@@ -224,6 +246,7 @@ h1 {
   z-index: 99;
 }
 
+
 /*Nav Newsletter*/
 .nav-newsletter {
   margin-left: 8%;
@@ -264,7 +287,21 @@ h1 {
   background-color: #f3f3f3;
 }
 
+/*  MOBILE NAVIGATION MEDIA QUERY  */
 
+@media (max-width: 45em){
+  .drawer-menu {
+    width: 100%;
+    height: 100%;
+    padding: 75px 0;
+    background: #000000;
+    opacity: 0.5;
+  }
+
+  .menu-btn {
+    right: 15px;
+  }
+}
 
 /*  END MOBILE NAVIGATION  */
 
@@ -336,6 +373,15 @@ h1 {
 
 .section-full-size {
     margin-top: 40px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url('../img/insight-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+
+.section-full-size-next {
+    margin-top: 40px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url('../img/insight-3.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -343,7 +389,7 @@ h1 {
     width: 100%;
 }
 
-.section-full-size p {
+.section-full-size p, .section-full-size-next p {
   font-family: Calibre;
   position: relative;
   margin-left: 3%;
@@ -368,6 +414,11 @@ h1 {
 .footer-section ul, ol {
   list-style: none;
 }
+.footer-links li {
+  padding-bottom: 8px;
+  width: 100%;
+  font-size: 0.9em;
+}
 
 .footer-newsletter {
 
@@ -375,12 +426,12 @@ h1 {
 
 .footer-links>li> a {
   text-decoration: none;
-  font
+  color: #212529;
 }
 
 .footer-links>li> a:hover {
   text-decoration: none;
-  font-color: red;
+  color: #ED5240;
 }
 
 .footer-contacts {
@@ -471,4 +522,43 @@ h1 {
 .about h3 {
   font-size: 1.45em;
   font-family: calibre-bold;
+}
+
+/*  MEDIA QUERIES */
+
+@media (max-width: 45em) {
+  .banner-home{
+    margin-top: 15%;
+  }
+  .banner-home p{
+    padding: 3%;
+    margin-top: 80%;
+  }
+
+  .section-sixty-size .col-md-8 {
+    padding-right: 0px;
+  }
+  .section-sixty-size h4 {
+    margin-top: 4%;
+  }
+  .header-one {
+    margin-top: 2%;
+  }
+  .section-sixty-size p {
+    text-align: justify;
+    padding: 1%;
+  }
+  .section-full-size p {
+    padding: 3%;
+    margin-top: 57%;
+  }
+  .section-full-size-next p {
+    padding: 3%;
+    margin-top: 57%;
+  }
+  .footer-section {
+    width: 100%;
+  }
+  .footer-copyright {
+  }
 }
