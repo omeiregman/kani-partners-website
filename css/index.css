@@ -480,20 +480,20 @@
   margin-top: 2%;
 }
 
+.footer-social img {
+  width: 50;
+  height: 50;
+}
+
 .social-icons {
-  width: 30px;
-  height: 30px;
-  background-color: #000;
-  padding: 10px;
-  border-radius: 100%;
+  padding: 2px;
   cursor: pointer;
 }
 
-.social-icons :hover {
-  max-width: 30px;
-  max-height: 30px;
+.social-icons img:hover {
   background-color: #ed5240;
-  border-radius: 50%;
+  border-radius: 7px;
+  opacity: 1;
 }
 
 
